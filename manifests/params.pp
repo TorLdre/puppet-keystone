@@ -15,6 +15,7 @@ class keystone::params {
       $python_memcache_package_name = 'python-memcache'
       $sqlite_package_name          = 'python-pysqlite2'
       $pymysql_package_name         = 'python-pymysql'
+      $oidc_package_name            = 'libapache2-mod-auth-openidc'
       $mellon_package_name          = 'libapache2-mod-auth-mellon'
       case $::operatingsystem {
         'Debian': {
@@ -33,6 +34,7 @@ class keystone::params {
       $sqlite_package_name          = undef
       $service_provider             = undef
       $pymysql_package_name         = undef
+      $oidc_package_name            = 'python2-PyMySQL'
       $mellon_package_name          = 'mod_auth_mellon'
     }
   }
